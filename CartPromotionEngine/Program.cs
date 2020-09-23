@@ -62,6 +62,25 @@ namespace CartPromotionEngine
                     Console.WriteLine("Enter Unit:");
                     Unit = Console.ReadLine();
                 }
+                int UnitReq = 0;
+                if ((Unit != "") || (Unit.GetType().Equals(typeof(string))))
+                {
+                    Match m = Regex.Match(Unit, @"[a-dA-D]");
+                    if (m.Success)
+                    {
+                        Console.WriteLine("Enter Unit Required:");
+                        UnitReq = Convert.ToInt32(Console.ReadLine());
+                        dict.Add(Unit.ToLower(), UnitReq);
+                    }
+                    else
+                    {
+                        Console.WriteLine("The Unit is not available");
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("The Unit is not available");
+                }
                 Console.WriteLine("Press Enter key to Continue or Type 'q' to exit : ");
                 Entry = Console.ReadLine();
             }
