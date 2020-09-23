@@ -10,7 +10,7 @@ namespace CartPromotionEngine
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Framework setup : Cart Promotion Engine");
+            Console.WriteLine("Framework setup : Cart Promotion Engine with Unit test");
         }
     }
 }
