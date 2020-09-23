@@ -8,6 +8,7 @@ namespace UnitTest_CartPromotionEngine
     [TestClass]
     public class UnitTest
     {
+        //Unit Test Methods to test Scenario A
         [TestMethod]
         public void ScenarioA()
         {
@@ -25,6 +26,7 @@ namespace UnitTest_CartPromotionEngine
             Assert.AreEqual(expectedOutput, actualOutput);
         }
 
+        //Unit Test Methods to test Scenario B
         [TestMethod]
         public void ScenarioB()
         {
@@ -42,6 +44,7 @@ namespace UnitTest_CartPromotionEngine
             Assert.AreEqual(expectedOutput, actualOutput);
         }
 
+        //Unit Test Methods to test Scenario C
         [TestMethod]
         public void ScenarioC()
         {
